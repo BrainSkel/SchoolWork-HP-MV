@@ -1,0 +1,33 @@
+Lõppprojekt.
+
+* Projekti tohib teha kas iseseisvalt või tiimis (max 2 õp.)
+* Projekt peab olema esitatud kaitsmisele hiljemalt 23.01.2021 
+(kuna 26.01 peab teil hinne väljas olema). Varem tohib ka muidugi.
+* Kaitsmine tähendab, et näidate mulle enda veebirakenduse, demonstreerite
+selle töö ja vastate täiendavatele küsimustele tehnoloogiate kohta.
+* Kui teete paaris, võib juhtuda, et saate erinevad hinded (sõltuvalt panusest)
+
+Mida peab esitama:
+1. Veebirakenduse kavandi (2 kavandit: 1 arvutivaade, 1 moobilvaade jaoks)
+2. SQL laused andmebaasi loomiseks ja näidisandmete sisse panemiseks.
+3. Projekti failid (mida teil tuleb siis localhost'ile panna, 
+et tööd demonstreerida. Muidugi tohib teil kasutada ka mingi hosting'u, kui on)
+
+Ülesanne kirjeldus:
+Tuleb teha eksamile registreerimisplatvormi. Tavainimene, kes 
+lihtsalt teeb rakenduse lahti saab ennast ühele pakutatavatest eksamiajadest
+kirja panna. Selleks tuleb tal sisestada oma ees- ja perekonnanimi ning 
+kontaktandmed (kinnitus registreerimisest saata meili peale, aga seda ei pea
+realiseerima).
+Veebirakendusele saab ka sisse logida. Sisselogimisõigus on eksamenaatoril. 
+Temale tohib uusi eksamiaegu lisada ja vaadata eksamile registreeritud kasutajate
+nimekirja.
+
+Nõudmised koodile:
+* OOP ja MVC lähenemisviisi rakendama ei pea (aga tohib, kui tahate ja oskate)
+* Kood peab vastama standartidele: kommentaarid, muutujate ja 
+funktsioonide nimetused, failide struktuur. Kood peab olema loetav!
+* Disain ja loogika eraldi
+* Ühtlane veebirakenduse disain
+* Kui oskate ja tahate võite kasutada raamistikud, nt Angular JS, Bootstrap vm
+* Andmeid peab olema võimalik tabelis sorteerida
