@@ -53,7 +53,7 @@
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo "<div class='users'><p>". $row["FirstName"]  . $row["LastName"] ."</p>
+                            echo "<div class='users'><p>". $row["usersName"] ."</p>
                             <div class='expand-Details' id='expand-Details'>
                             <form action='insertForExam.php'>
                             <input type='hidden' name='id' value=".$row["id"].">

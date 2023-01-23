@@ -1,5 +1,7 @@
 <html>
     <body>
+        
+        
 
         <?php
 
@@ -24,7 +26,7 @@
                     $sql = "INSERT INTO examinees (FirstName, LastName, Age, Email, Examiner_id) 
                     VALUES ('".$first_name."','".$last_name."','".$age."','".$user_email."','".$id."')";
                     if ($conn->query($sql) === TRUE) {
-                    echo "You are registered";
+                    echo '<h1>You are registered</h1></br><a href="/">Go to home page!</a>';
                     } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                     }
