@@ -20,6 +20,30 @@
                 $sessionid = session_id();
                 $_SESSION["LoginEmail"] = $Email;
                 $_SESSION["logged_in"] = true;
+
+
+                //get user info
+
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                // Check connection
+                if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+                }
+
+                $sql = "SELECT * FROM users where Email='$Email'";
+                $result = $conn->query($sql);
+            
+                if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    $_SESSION["UserId"] = $_ROW["Id"];
+                }
+                } else {
+                echo "0 results";
+                }
+                $conn->close();
+
+              
             
 
 
