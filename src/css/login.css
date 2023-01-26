@@ -1,0 +1,81 @@
+.text-design{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+}
+
+.login-design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.945);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid rgb(61, 61, 61);
+
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    bottom: 50%;
+}
+
+.register-design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.945);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid rgb(61, 61, 61);
+
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    top: 50%;
+}
+
+.body-design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.945);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid rgb(61, 61, 61);
+}
+
+input{
+    border: none;
+    color: white;
+    background-color: inherit;
+    border-left: 1px solid brown;
+    border-right: 1px solid brown;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    font-family: "Rubik", sans-serif;
+    transition: ease-in-out 520ms;
+    padding: 2rem;
+    font-size: 16px;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: inherit;
+    border-left: 1px solid brown;
+    border-right: 1px solid brown;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    font-family: "Rubik", sans-serif;
+    transition: ease-in-out 520ms;
+    padding: 2rem;
+    font-size: 16px;
+}

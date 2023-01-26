@@ -34,7 +34,7 @@
 
 </head>
 
-<body>
+<body class="body-design">
     <div class="page">
         <div class="tooted" id="tooted">
                 <!-- JS JSON tooted-->

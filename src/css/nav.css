@@ -3,21 +3,27 @@ nav{
     position: static;
     display: flex;
     flex-direction:row ;
-    gap: 16px;
-    background-color: lightgray;
     width: 100%;
     margin: 0;
     height: 60px;
     border-bottom: 1px solid brown; 
-    box-shadow: 0px 15px 20px -2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 15px 20px -2px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 15px 20px -2px rgba(0,0,0,0.4);
+    box-shadow: 0px 15px 20px -2px rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 15px 20px -2px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 15px 20px -2px rgb(0, 0, 0);
     transition: ease-in-out 400ms;
     align-items: stretch;
     margin-left: auto;
     overflow: hidden;
     transition-property: top;
     
+    border-right: 1px solid brown;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(0, 0, 0);
+    border-left: 1px solid;
+    font-weight: 400;
+    color:white;
+    z-index: 1;
 }
 nav:hover {
     border-bottom: 1px solid red;
@@ -25,37 +31,42 @@ nav:hover {
     box-shadow: 0px 15px 20px -2px rgba(54, 27, 27, 0.4);
     -webkit-box-shadow: 0px 15px 20px -2px rgba(54, 27, 27, 0.4);
     -moz-box-shadow: 0px 15px 20px -2px rgba(54, 27, 27, 0.4);
+    z-index: 1;
 }
+
 
 body {
     margin: 0;
+    z-index: 1;
 }
 
 nav img {
     max-height: 61px;
+    z-index: 1;
 }
 .home button {
     border: none;
     padding: 0;
+    z-index: 1;
 }
 .home {
     left: 0;
     z-index: 100;
     margin-right: auto;
+    z-index: 1;
 }
 
 .login button, .registerToExam button {
     border: none;
-    color: gray;
-    padding-left: 3px;
-    padding-right: 3px;
+    color: white;
     background-color: inherit;
     border-left: 1px solid brown;
     border-right: 1px solid brown;
+    font-family: "Rubik", sans-serif;
     transition: ease-in-out 520ms;
     padding: 22px;
     font-size: 16px;
-
+    z-index: 1;
 }
 
 .login button:hover, .registerToExam button:hover {
@@ -64,5 +75,6 @@ nav img {
     transition: ease-in-out 150ms;
     color: black;
     background-color: rgb(197, 197, 197);
-    
+    font-family: "Rubik", sans-serif;
+    z-index: 1;
 }

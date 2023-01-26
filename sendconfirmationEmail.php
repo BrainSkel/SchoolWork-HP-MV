@@ -4,7 +4,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <head>
 
-    <body>
+    <body class="body-design">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {

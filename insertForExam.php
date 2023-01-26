@@ -48,4 +48,5 @@
             </div>
         </form>
      </div>
+     <div id="menu-background-pattern"></div>
 </body>

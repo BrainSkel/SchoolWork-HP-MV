@@ -1,24 +1,70 @@
 .registerToExam-BTN button{
     width: 50%;
     margin: auto;
-
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    z-index: 2;
 }
 
 .registerToExam-BTN button, .registerToExam-BTN button img {
     border: none;
-    background-color: rgba(255, 255, 255, 0.103);
+    background-color: transparent;
     width: 223px;
-    transition: ease-in-out 150ms;
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    z-index: 2;
 }
 .registerToExam-BTN button:hover , .registerToExam-BTN button img:hover {
     border: none;
-    background-color: rgba(255, 255, 255, 0.103);
+    background-color: transparent;
     width: 215px;
-    transition: ease-in-out 150ms;
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    z-index: 2;
 }
 
 .indexBody {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.945);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid rgb(61, 61, 61);
+    z-index: 2;
+}
+
+#menu-background-pattern {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    height: 100vh;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100vw;
+    z-index: 0;
+}
+#menu-items:hover ~ #menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+  
+#menu-items:hover > .menu-item:hover {
+    opacity: 1; 
 }
