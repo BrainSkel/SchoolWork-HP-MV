@@ -4,6 +4,7 @@
         
 
         <?php
+            session_start();
 
             $id = urldecode($_GET["id"]);
             $first_name = urldecode($_GET["first_name"]);

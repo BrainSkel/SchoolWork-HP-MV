@@ -6,9 +6,7 @@
 <html>
     <body>
     <?php
-        @$_SESSION['LoginEmail'] = $_GET['LoginEmail'];
-        @$_SESSION['LoginPsw'] = $_GET['LoginPsw'];
-    $message = '';
+        $message = '';
         if(isset($_POST['LoginButton'])) {
             $Email = $_POST['LoginEmail'];
             $Psw = $_POST['LoginPsw'];
@@ -19,15 +17,11 @@
             if ($result->num_rows > 0) {
                 // details match a record in the database
                 echo "Welcome back!";
-                session_start();
+                $sessionid = session_id();
                 $_SESSION["LoginEmail"] = $Email;
-                $_SESSION["LoginPsw"] = $Psw;
+                $_SESSION["logged_in"] = true;
+            
 
-                $LoginEmail = $_SESSION['LoginEmail'];
-                $LoginPsw = $_SESSION['LoginPsw'];
-
-                @$LoginEmail = $_SESSION['LoginEmail'];
-                @$LoginPsw = $_SESSION['LoginPsw'];
 
             } else {
                 // details do not match any records in the database
