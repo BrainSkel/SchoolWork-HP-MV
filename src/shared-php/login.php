@@ -21,7 +21,7 @@
                 echo "Welcome back!";
                 $sessionid = session_id();
                 $_SESSION["LoginEmail"] = $Email;
-                $_SESSION["logged_in"] = true;
+                @$_SESSION["logged_in"] = true;
 
 
                 //get user info

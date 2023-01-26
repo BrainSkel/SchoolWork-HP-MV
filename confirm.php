@@ -31,6 +31,11 @@
                     } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                     }
+                    $sql = "UPDATE exams set Available=False where ExamId=".$id;
+                    if ($conn->query($sql) === TRUE) {
+                        } else {
+                        echo "Error: " . $sql . "<br>" . $conn->error;
+                        }
 
                     $conn->close();
                 ?>
