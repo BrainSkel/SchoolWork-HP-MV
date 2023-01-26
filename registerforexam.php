@@ -49,20 +49,20 @@
                     if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
                     }
-                    $sql = "SELECT * FROM `users`";
+                    $sql = "SELECT * FROM `exams`";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo "<div class='users'><p>". $row["usersName"] ."</p>
+                            echo "<div class='ExamTime'><p>". $row["ExamTime"] ."</p>
                             <div class='expand-Details' id='expand-Details'>
                             <form action='insertForExam.php'>
-                            <input type='hidden' name='id' value=".$row["id"].">
+                            <input type='hidden' name='id' value=".$row["ExamId"].">
                             <input type='submit' value='Register'>
                             </form>
                             </div>";
                         }
                     } else {
-                        echo "error";
+                        echo "<h3>No avaible exams!</h3>";
                     }
 
                     $conn->close();

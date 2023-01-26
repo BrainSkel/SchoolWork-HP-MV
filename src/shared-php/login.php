@@ -10,6 +10,8 @@
         if(isset($_POST['LoginButton'])) {
             $Email = $_POST['LoginEmail'];
             $Psw = $_POST['LoginPsw'];
+            session_destroy();
+            session_start();
 
             $mysqli = new mysqli("localhost", "root", "", "examsdb");
             $query = "SELECT * FROM users WHERE Email='$Email' AND Psw='$Psw'";
@@ -24,7 +26,7 @@
 
                 //get user info
 
-                $conn = new mysqli($servername, $username, $password, $dbname);
+                $conn = new mysqli("localhost", "root", "", "examsdb");
                 // Check connection
                 if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
@@ -36,7 +38,7 @@
                 if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
-                    $_SESSION["UserId"] = $_ROW["Id"];
+                    $_SESSION["UserId"] = $row["Id"];
                 }
                 } else {
                 echo "0 results";
