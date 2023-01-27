@@ -1,7 +1,11 @@
 <?php include "src/shared-php/header.php"?>
 <?php include "src/shared-php/nav.php"?>
 
+<head>
+    <link rel="stylesheet" href="./src/css/registernewexam.css">
+</head>
 
+<body class="body-design">
 <?php
         $message = '';
         if(isset($_POST['Submit'])) {
@@ -26,7 +30,7 @@
             VALUES ('".$Avaible."', '".$ExamTime."', ".$UserId.")";
 
             if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
+            $created = true;
             } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
             }
@@ -42,8 +46,8 @@
 <?php
     if ($_SESSION["logged_in"]) {
         echo '
-<form action="" method="post">
-    <label>Insert date> <input type="datetime-local" name="ExamTime" require>
+<form class="form-bruh" action="" method="post">
+    <label>Insert date <input type="datetime-local" name="ExamTime" require>
     <input type="hidden" name="Avaible" value='.TRUE.'>
     <input type="hidden" name="UserId" value='.$_SESSION["UserId"].'>
     <input type="submit" name="Submit" value="Add New">
@@ -53,3 +57,4 @@
     }
 
 ?>
+</body>

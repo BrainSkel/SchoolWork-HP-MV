@@ -60,10 +60,10 @@
             <form action="" method="post">
                 <?php
                 echo'
-                <label>Email:<input type="Email" name="LoginEmail" id="LoginEmail" value="'.@$Email.'" require autocomplete="true">';
+                <label>Email:<input type="Email" name="LoginEmail" id="LoginEmail" value="'.@$Email.'" require autocomplete="true" placeholder="Email">';
                 ?>
-                <label>Enter Password:<input type="password" name="LoginPsw" id="LoginPsw" require autocomplete="true">
-                <label><input type="submit" name="LoginButton" value="Login">
+                <label>Enter Password:<input type="password" name="LoginPsw" id="LoginPsw" require autocomplete="true" placeholder="Password">
+                <label><input type="submit" name="LoginButton" value="Login" >
             </form>
 
         </div>

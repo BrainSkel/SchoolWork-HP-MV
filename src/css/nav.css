@@ -1,6 +1,6 @@
 nav{
     top: 0;
-    position: static;
+    position: sticky;
     display: flex;
     flex-direction:row ;
     width: 100%;
@@ -76,5 +76,34 @@ nav img {
     color: black;
     background-color: rgb(197, 197, 197);
     font-family: "Rubik", sans-serif;
+    z-index: 1;
+}
+
+.welcome {
+    border: none;
+    color: white;
+    background-color: inherit;
+    border-left: 1px solid brown;
+    border-right: 1px solid brown;
+    font-family: "Rubik", sans-serif;
+    transition: ease-in-out 520ms;
+    padding: 22px;
+    font-size: 16px;
+    position: static;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.welcome button {
+    border: none;
+    color: white;
+    background-color: inherit;
+    font-family: "Rubik", sans-serif;
+    transition: ease-in-out 520ms;
+    padding: 1rem;
+    font-size: 16px;
+    position: static;
+    display: flex;
     z-index: 1;
 }

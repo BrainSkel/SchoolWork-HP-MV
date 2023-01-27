@@ -53,7 +53,7 @@
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo "<div class='ExamTime'><p>". $row["ExamTime"] ."</p>
+                            echo "<div class='examtime'><p>". $row["ExamTime"] ."</p>
                             <div class='expand-Details' id='expand-Details'>
                             <form action='insertForExam.php'>
                             <input type='hidden' name='id' value=".$row["ExamId"].">

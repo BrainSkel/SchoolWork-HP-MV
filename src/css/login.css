@@ -79,3 +79,17 @@ button{
     padding: 2rem;
     font-size: 16px;
 }
+
+label{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-family: 'Rubik', "sans-serif";
+    display: block;
+
+    position: absolute;
+    display: flex;
+    top: 10%;
+}

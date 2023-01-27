@@ -1,6 +1,9 @@
 <head>
 </head>
-<body>
+<header>
+    <link rel="stylesheet" href="/src/css/insertforexam.css">
+</header>
+<body class="body-design">
     <div class="ostukorvOsta">
         <form action="/sendconfirmationEmail.php">
             <div class="ostukorviToode">
@@ -29,13 +32,13 @@
             </div>
             <div class="sendMessage">
                 <div><input type="hidden" name="contact_number"></div>
-                <div><label for="first_name" >First Name</label></div>
+                <div class="text-design"><label for="first_name" >First Name</label></div>
                 <div><input type="text" id="first_name" name="first_name" required></div>
-                <div><label for="last_name" >Last Name</label></div>
+                <div class="text-design"><label for="last_name" >Last Name</label></div>
                 <div><input type="text" id="last_name" name="last_name" required></div>
-                <div><label for="age">Age</label></div>
+                <div class="text-design"><label for="age">Age</label></div>
                 <div><input type="number" id="age" name="age" required></div>
-                <div><label for="user_email">Email</label></div>
+                <div class="text-design"><label for="user_email">Email</label></div>
                 <div><input type="email" id="user_email" name="user_email" required></div>
 
                 <?php

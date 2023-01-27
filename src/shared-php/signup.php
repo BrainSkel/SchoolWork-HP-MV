@@ -46,12 +46,12 @@
             <form action="" method="post">
                 <?php
                 echo'
-                <label>First Name:<input type="text" name="FirstName" id="FirstName" value ="'.@$FirstName.'" require autocomplete="false">
-                <label>Last Name:<input type="text" name="LastName" id="LastName" value="'.@$LastName.'" require autocomplete="false">
-                <label>Email:<input type="Email" name="Email" id="Email" value="'.@$Email.'" require autocomplete="true">
+                <label>First Name:<input type="text" name="FirstName" id="FirstName" value ="'.@$FirstName.'" require autocomplete="false" placeholder="First Name">
+                <label>Last Name:<input type="text" name="LastName" id="LastName" value="'.@$LastName.'" require autocomplete="false" placeholder="Last Name">
+                <label>Email:<input type="Email" name="Email" id="Email" value="'.@$Email.'" require autocomplete="true" placeholder="Email">
                 ';
                 ?>
-                <label>Password:<input type="password" name="Psw" id="psw" require autocomplete="false">
+                <label>Password:<input type="password" name="Psw" id="psw" require autocomplete="false" placeholder="Password">
                 <label><input type="submit" name="SubmitButton" value="Register">
             </form>
 

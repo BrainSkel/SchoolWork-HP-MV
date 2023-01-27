@@ -1,8 +1,9 @@
-<html>
+<head>
+</head>
+<header>
+    <link rel="stylesheet" href="/src/css/insertforexam.css">
+</header>
     <body class="body-design">
-        
-        
-
         <?php
             session_start();
 
@@ -42,4 +43,3 @@
 
 
     <body>
-</html>
